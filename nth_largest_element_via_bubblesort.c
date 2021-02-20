@@ -17,10 +17,9 @@ void swap(int *num1, int *num2)
 }
 int searching_element(int *arr, int size, int max)
 {
-    int i, k=0, j;
-    for(i=0; i<=max; i++)
+    int i,j;
+    for(i=0; i<max; i++)
     {
-        k++;
         for(j=0; j<size-1-i; j++)
         {
             if(arr[j] > arr[j+1])
@@ -28,13 +27,9 @@ int searching_element(int *arr, int size, int max)
                 swap(&arr[j], &arr[j+1]);
             }
         }
-
-        if(k == max)
-            return arr[j];
-
     }
 
-    return 0;
+    return arr[j];
 
 }
 
