@@ -1,3 +1,8 @@
+/*
+    insertion sort starts from i=1 and then compare itself with the left elements from j = i-1.
+    this sorting technique is best for linklist
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 
