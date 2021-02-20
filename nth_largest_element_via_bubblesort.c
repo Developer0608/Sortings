@@ -30,7 +30,6 @@ int searching_element(int *arr, int size, int max)
     }
 
     return arr[j];
-
 }
 
 int main()
